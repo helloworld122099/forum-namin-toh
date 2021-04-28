@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+        <script src="{% static 'network/functions.js' %}"></script>
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+       <ul class="tabs">
+
+		<li><img src="https://uploads-ssl.webflow.com/5bf47dec40b4dc5877c2f155/5e8b9a2e21913a37be216ae4_aiesec%20black%20logo.png" height="40"></li>
+
+    <li data-tab-target="#home" class="active tab">Home</li>
+
+    <li data-tab-target="#academics" class="tab">Academics</li>
+
+    <li data-tab-target="#love" class="tab">Love</li>
+
+    <li data-tab-target="#life" class="tab">Life</li>
+
+    <li data-tab-target="#aiesec" class="tab">AIESEC</li>
+    
+    <li data-tab-target="#freedomwall" class="tab">Freedom Wall</li>
+    
+    <li data-tab-target="#beinspired" class="tab">Be Inspired</li>
+    
+    <li data-tab-target="#guidelines" class="tab">Guidelines</li>
+
+    <div class="action">
+      <div class= "profile" onclick="menuToggle();">
+      <img src="https://p.favim.com/orig/2018/09/21/girl-pfp-care-free-profile-picture-Favim.com-6340863.jpg" class="avatar">
+      </div>
+      <div class="menu">
+        <h3>Lollipop<br><span>AIESEC member</span></h3>
+        <ul>
+          <li><img src="IMAGES/user.png" ><a href="userprofile.html">My Profile</a></li>
+          
+          <li><img src="IMAGES/edit.png" ><a href="userprofile.html">Edit Profile</a></li>
+
+          <li><img src="IMAGES/log-out.png"><a href="#">Logout</a></li>
+         </ul>
+      </div>
+    </header>
+  </ul>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+               <center> 
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Topic</option>
+                    <option value="Descriptions">Body</option>
+                </select>
+                <input type="text" name="q" placeholder="Search ...">
+                <button><i class="fa fa-search"></i></button>
+                 </center> 
+            </div>
+        </div>
+
+  <div class="tab-content">
+  <div id="home" data-tab-content class="active" >
+      <div class="header">
+  <center><h1>AIESECWALL</h1></center>
+    </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+    
+    <form action="/action_page.php">
+  <div class="containerhome">
+    <h3>Welcome to AIESECWALL!</h3>
+    <p>Have anything to say? Create a post below!</p>
+    <hr>
+    <center>
+                <select name="" id="">
+                    <option value="Everything">Academics</option>
+                    <option value="Titles">Love</option>
+                    <option value="Descriptions">Life</option>
+                    <option value="Descriptions">AIESEC</option>
+                    <option value="Descriptions">Freedom Wall</option>
+                    <option value="Descriptions">Be Inspired</option>
+                </select>
+                </center>
+    <input type="text" placeholder="What's on your mind?" name="post" id="post" required>
+    <button type="submit" class="submit">Add an Image</button>
+    <button type="submit" class="submit">Submit</button>
+  </div>
+</form>
+</div>
+
+ <div class="card">
+      <h3>About Us AIESECWALL</h3>
+      <p>A community forum website for the organization, AIESEC in DLSU-M, that allows users to post questions, thoughts, and sentiments on love, life, and academics, as well as post motivational and inspirational quotes and messages for fellow orgmates.</p>
+ </div>
+
+    <div class="card2">
+      <h4>Follow AIESEC!</h4>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-medium"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </div>
+</div>
+
+        <div id="academics" data-tab-content >
+          <center> <h2>Academics</h2>
+          <p>Need help with acads? We gotchu!</p>
+           </center> 
+          
+    
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="content">Topic: Academics</div>
+                </div>
+            </div>
+            <div class="container">
+            <!--Acads Section-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3;">QueenTaylorSwift13</a></div>
+                      <img src="IMAGES/sample1.jpg" alt="">
+                  
+        
+                  </div>
+
+                  
+                    <div class="content">
+                        Hi! I'm a new member here!
+                        <br>I can't seem to finish my assignment and I need help :(
+                        <br><br>
+                        Can someone help me?
+                        <br>
+                        <hr>
+                        Regards, Stream Taylor's New Album
+                        <br>
+                        <br>                         
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div>                    
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div>
+                    </div>
+                </div>
+            
+
+          
+            
+            <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+            <!--Comments Section-->
+            <div class="replycontainer">
+                <div class="body">
+                    <div class="authors">
+                        <div class="replyusername"><a href="" style="color: rgb(9, 117, 63);">BillieEilishRAWR</a></div>
+    
+                        <img src="IMAGES/sample2.jpg" alt="">
+
+                    </div>
+                    <div class="content">
+                        Welcome to AIESEC, QueenTaylorSwift13!
+                        <br>Feel free to browse in our website for some tips.
+                        <br><br>
+                        I'll gladly assist you with your assignment! :)
+                        <br>
+                        <br>
+                        
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+         
+        
+          
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+          </div> 
+  </div>  
+
+      
+
+      <div id="love" data-tab-content >
+           <center> 
+          <h2>Love</h2>
+          <p>Crush problems? Share naman dyan!</p>
+           </center> 
+          
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="content">Topic: Love</div>
+                </div>
+            </div>
+          <div class="container">
+          <!--Another Post-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3;">anonymousDOG</a></div>
+                      <img src="IMAGES/sample3.jpg" alt="">
+                  </div>
+                    <div class="content">
+                          OMG, ang ganda ng website!!! 
+                        <br>Anyways, I just wanna ask sum advice about my crush :(((
+                        <br><br>
+                        He's sending mixed signals ehhh. Mga sis patulong naman JSGKKCXV              
+                        <hr>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+              <div class="replycontainer">
+                <div class="body">
+                    <div class="authors">
+                        <div class="replyusername"><a href="" style="color: rgb(9, 117, 63);">CrushNgBayan</a></div>
+                
+                        <img src="IMAGES/sample4.jpg" alt="">
+
+                    </div>
+                    <div class="content">
+                          Hello beb!
+                        <br>What kind of mixed signals ba? Let us know!! Hahaha
+                        <br>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+          </div>
+          </div>
+        
+      
+        
+        <div id="life" data-tab-content>
+           <center> 
+      <h2>Life</h2>
+      <p>Let us know a bit about your life!</p>
+       </center> 
+      
+          <div class="topic-container">
+                <div class="head">
+                <div class="content">Topic: Life</div>
+                </div>
+      <div class="container">
+          <!--Another Post-->
+            </div>
+          </div>
+    </div>
+
+          <div id="aiesec" data-tab-content>
+             <center> 
+          <h2>AIESEC</h2>
+          <p>Share your thoughts and ask questions on all things AIESEC related!</p>
+           </center> 
+
+        
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="content">Topic: AIESEC</div>
+                </div>
+            </div>
+          <div class="container">
+          <!--Another Post-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3;">Harry Styles</a></div>
+                      <img src="IMAGES/sample5.jpg" alt="">
+
+                  </div>
+                    <div class="content">
+                        Hello!! What's a good color palette for a tracker? Can anyone send a link or image of the hex codes? Help please!      
+                        <hr>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                     <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+                    <div class="replycontainer">
+                <div class="body">
+                    <div class="authors">
+                        <div class="replyusername"><a href="" style="color: rgb(9, 117, 63);">CrushNgBayan</a></div>
+                        <img src="IMAGES/sample4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                          Hi
+                        <br>Here's a link: https://sarahrenaeclark.com/color-palettes-beautiful-landscapes/
+                        <br>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+          </div>
+          </div>
+  
+        
+
+       <div id="freedomwall" data-tab-content >
+          <center> 
+          <h2>Freedom Wall</h2>
+          <p>Post whatever you want!</p>
+           </center> 
+          
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="content">Topic: Freedom Wall</div>
+                </div>
+            </div>
+          <div class="container">
+            <!--Another Post-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3;">ILOVEJEONJUNGKOOK</a></div>
+                      <img src="IMAGES/sample6.jpg" alt="">
+
+                  </div>
+                    <div class="content">
+                        SO SHOW MEEE ILL SHOW YOUUU MAAAGIC SHOP 
+                        <br>let's sing The Magic Shop by BTS
+                        <br><br>
+                        :DDD                
+                        <hr>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+            
+                    <div class="replycontainer">
+                <div class="body">
+                    <div class="authors">
+                        <div class="replyusername"><a href="" style="color: rgb(9, 117, 63);">HelloEveryone123</a></div>
+                
+                        <img src="IMAGES/sample7.jpg" alt="">
+
+                    </div>
+                    <div class="content">
+                          Hi
+                        <br>OMG I LOVE THAT SONG!!
+                        <br>
+                        <br>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                    </div>
+                    <div class="dropdown">
+                      <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      
+                      <!-- <div id="myDropdown" class="dropdown-content">
+                        <a href="#delete">Delete</a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+          </div>
+        </div>
+      
+
+              <div id="beinspired" data-tab-content>
+                 <center> 
+          <h2>Be Inspired!</h2>
+          <p>Let's inspire each other!</p>
+           </center> 
+
+            
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="content">Topic: Inspiration</div>
+                </div>
+            </div>
+            <div class="container">
+          <!--Another Post-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3;">TMBestDept</a></div>
+                      <img src="IMAGES/sample8.png" alt="">
+
+                  </div>
+                    <div class="content">
+                        love this team foreeeever!    
+                        <hr>
+                        <br>
+                        <img src="IMAGES/inspire.jpg" alt="">
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                        <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                      </div>
+                  </div>
+                        
+                <div class="replycontainer">
+                  <div class="body">
+                <div class="authors">
+                    <div class="replyusername"><a href="" style="color: rgb(9, 117, 63);">CrushNgBayan</a></div>
+            
+                    <img src="IMAGES/sample4.jpg" alt="">
+
+                </div>
+                <div class="content">
+                      Hi
+                    <br>Love u
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                    <div class="h_container">
+                           <i id="heart" class="fa fa-heart" style= "float:  right; margin: -15px 0.5px;"></i>
+                        </div> 
+                </div>
+                <div class="dropdown">
+                  <ul class="dropbtn icons btn-right " onclick="showDropdown()">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  
+                  <!-- <div id="myDropdown" class="dropdown-content">
+                    <a href="#delete">Delete</a>
+                </div> -->
+                </div>
+            </div>
+      </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+           </div>
+    </div>
+</div>
+              
+              
+
+       <div id="guidelines" data-tab-content >
+          <center> 
+          <h2>Guidelines</h2>
+          <p> Failure to follow these rules may result to your posts be taken down. </p>
+           </center>          
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+      
+                    <div class="content"><center>COMMUNITY RULES YOU NEED TO FOLLOW </center></div>
+
+                </div>
+            </div>
+          <div class="container">
+          <!--Another Post-->
+                <div class="body">
+                  <div class="authors">
+                      <div class="username"><a href="" style="color: #037ef3">1. No Swearing<br> 2. Be Kind! <br> 3. Respect Each Other <br> 4.No Dissing <br> 5. Enjoy! </a></div>
+
+                  </div>
+
+    </div>
+  
+    <script src="main.js"></script>
+
+</body>
+</html>
