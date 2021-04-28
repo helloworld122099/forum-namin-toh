@@ -1,0 +1,93 @@
+/* ########################################### */
+/*           Edit/View User Profile                   */
+/* ########################################### */
+body{
+  background-color: #f3f4f7;
+}
+*:focus{
+  outline: none;
+}
+
+.userbox{
+  box-sizing: border-box;
+  width: 153px;
+  height: 153px;
+  border: 2px solid gray;
+  box-shadow: -3px -3px 7px orange,
+              3px 3px 5px rgb(94,204,121,0.288);
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 50px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.imgprofile{
+  box-sizing: border-box;
+  width: 149px;
+  height: 149px;
+  border-radius: 50%;
+  margin: 0;
+  border: 5px solid #0082e6;
+  padding: 3px;
+  background-color: white;
+  transition: all 1s;
+}
+input[type="text"]{
+  margin-top: 25px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+  border-bottom: 2px solid #3498db;
+  border-bottom-right-radius: 20px;
+  color: #3498db;
+  transition: 0.2 ease
+}
+
+button{
+  border: 1px solid #3498db;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 0px;
+  transition: all 0.3s;
+
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+input[type="file"]{
+  display: none;
+}
+
+label{
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #3498db;
+  padding: 2px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+label:hover{
+  background-color: #3498db;
+  color:black;
+}
+
+.userbox:hover{
+  width: 360px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.userbox:hover img{
+  width: 100px;
+  height: 100px;
+  margin:20px 31%;
+}
